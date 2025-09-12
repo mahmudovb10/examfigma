@@ -46,30 +46,109 @@
   width: 100%;
 }
 
+body {
+  overflow-x: hidden;
+  background-color: #f6f5f1;
+}
+
+.siteLogo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 26px;
+  padding-bottom: 20px;
+}
+
 .pagesHome {
   display: flex;
   gap: 40px;
+  align-items: center;
   justify-content: center;
-  margin-top: -2rem;
+  flex: 1;
+  margin-left: 10rem;
+}
+
+.homeBtn {
+  margin-left: 25rem;
 }
 
 .active {
   text-decoration: underline;
-  text-decoration-color: tomato;
+  text-decoration-color: #fe9f6b;
 }
 
 a {
   text-decoration: none;
 }
 
-.home {
-  color: #163a34;
-}
-
-.about {
-  color: #163a34;
-}
-
+.home,
+.about,
 .contact {
+  width: 49px;
+  height: 27px;
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 18px;
   color: #163a34;
+}
+
+.btn {
+  width: 150px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: #163a34;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+}
+
+.homeBtn {
+  color: #ffffff;
+}
+
+.head__btn {
+  color: #ffffff;
+}
+
+.burger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 769px) {
+  .pagesHome {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 70px;
+    left: 4rem;
+    right: 0;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    height: 231px;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  .pagesHome.open {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+    margin-right: 5rem;
+  }
+
+  .homeBtn {
+    width: 450px;
+    margin-top: 10px;
+    margin-right: 25rem;
+  }
 }
