@@ -54,8 +54,8 @@
 }
 
 .active {
-  text-decoration: underline; /* Matnning tagiga chiziq chizadi */
-  text-decoration-color: tomato; /* Chiziq rangini ko'k qiladi */
+  text-decoration: underline;
+  text-decoration-color: tomato;
 }
 
 a {
