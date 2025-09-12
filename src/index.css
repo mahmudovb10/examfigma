@@ -437,3 +437,62 @@ a {
     display: inline-block;
   }
 }
+@media (max-width: 500px) {
+  .mainPic {
+    width: 520px;
+    height: 500px;
+    position: relative;
+    right: 1.5rem;
+  }
+  .main__hero__img {
+    width: 500px;
+    height: 473px;
+    object-fit: cover;
+    margin-top: 39rem;
+  }
+  .homePat {
+    display: none;
+  }
+  .mbpattern {
+    display: inline-block;
+  }
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.mainTitle {
+  width: 1192px;
+  height: 58px;
+  font-family: "Nunito";
+  font-size: 48px;
+  color: #163a34;
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.wholeIcon {
+  margin-top: 4.8rem;
+}
+
+.wholeTitle {
+  width: 376px;
+  height: 42px;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 32px;
+  color: #163a34;
+}
+
+.wholeDesc {
+  width: 350px;
+  height: 60px;
+  font-family: "Nunito Sans";
+  font-weight: 500;
+  color: #395852;
+}

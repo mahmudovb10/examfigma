@@ -19,6 +19,25 @@ function Home() {
           alt=""
         />
       </div>
+      <br />
+      <br />
+      <br />
+      <main className="main">
+        <h1 className="mainTitle">What you’ll get</h1>
+        <div className="func">
+          <div className="wholePost">
+            <img
+              className="wholeIcon"
+              src="/assets/icon-whole-food-recipes.svg"
+              alt=""
+            />
+            <h3 className="wholeTitle">Whole-food recipes</h3>
+            <p className="wholeDesc">
+              Each dish uses everyday, unprocessed ingredients.
+            </p>
+          </div>
+        </div>
+      </main>
     </>
   );
 }
