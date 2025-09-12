@@ -152,3 +152,69 @@ a {
     margin-right: 25rem;
   }
 }
+@media (max-width: 576px) {
+  .pagesHome {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 75px;
+    left: 7rem;
+    right: 0;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 231px;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  .pagesHome.open {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+    margin-right: 5rem;
+  }
+
+  .homeBtn {
+    width: 180px;
+    margin-top: 10px;
+    margin-right: 25rem;
+  }
+}
+@media (max-width: 410px) {
+  .pagesHome {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 75px;
+    left: 7rem;
+    right: 0;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 130px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  .pagesHome.open {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+    margin-right: 5rem;
+  }
+
+  .homeBtn {
+    width: 130px;
+    margin-top: 10px;
+    margin-right: 25rem;
+  }
+}
