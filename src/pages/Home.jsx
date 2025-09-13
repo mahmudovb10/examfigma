@@ -5,6 +5,7 @@ function Home() {
       <h1 className="homeTitle">
         <span className="colText">Healthy</span> meals, zero fuss
       </h1>
+      <div className="colT"></div>
       <p className="homeDesc">
         Discover eight quick, whole-food recipes that you can cook tonight—no
         processed junk, no guesswork.

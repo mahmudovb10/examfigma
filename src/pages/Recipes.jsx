@@ -2,7 +2,6 @@ import { useFetch } from "../hooks/useFetch";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-// Debounce funksiyasi: API chaqirishni harf yozishdan keyin 500ms kutadi
 function useDebounce(value, delay) {
   const [debouncedValue, setDebouncedValue] = useState(value);
 
@@ -19,10 +18,8 @@ function Recipes() {
   const [cookTime, setCookTime] = useState("");
   const [search, setSearch] = useState("");
 
-  // Debounced search to prevent input freeze
   const debouncedSearch = useDebounce(search, 500);
 
-  // query params
   const queryParams = new URLSearchParams();
   if (prepTime && prepTime !== "cancel")
     queryParams.append("prepMinutes", prepTime);
@@ -50,41 +47,42 @@ function Recipes() {
         your eye.
       </p>
 
-      {/* 🔍 Search input (dizayniga tegilmaydi) */}
-      <div className="mb-6 flex justify-center">
-        <input
-          type="text"
-          placeholder="Search recipes..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          className="border border-gray-300 rounded-lg px-4 py-2 w-[310px] max-w-md focus:outline-none focus:ring-2 focus:ring-gray-300"
-        />
-      </div>
+      <div>
+        <div className="mb-6 flex justify-end ">
+          <input
+            type="text"
+            placeholder="Search recipes..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="border border-gray-300 rounded-lg px-4 py-2 w-[310px] max-w-md focus:outline-none focus:ring-2 focus:ring-gray-300"
+          />
+        </div>
 
-      <div className="selects flex gap-4 justify-center mb-6">
-        <span className="prepTitle">Max Prep Time</span>
-        <select
-          value={prepTime}
-          onChange={(e) => setPrepTime(e.target.value)}
-          className="select selOne"
-        >
-          <option value="">Cancel</option>
-          <option value="5">5 min</option>
-          <option value="10">10 min</option>
-        </select>
+        <div className="selects flex gap-4 justify-center mb-6">
+          <span className="prepTitle">Max Prep Time</span>
+          <select
+            value={prepTime}
+            onChange={(e) => setPrepTime(e.target.value)}
+            className="select selOne"
+          >
+            <option value="">Cancel</option>
+            <option value="5">5 min</option>
+            <option value="10">10 min</option>
+          </select>
 
-        <span className="cookTitle">Max Cook Time</span>
-        <select
-          value={cookTime}
-          onChange={(e) => setCookTime(e.target.value)}
-          className="select selTwo"
-        >
-          <option value="">Cancel</option>
-          <option value="5">5 min</option>
-          <option value="10">10 min</option>
-          <option value="15">15 min</option>
-          <option value="20">20 min</option>
-        </select>
+          <span className="cookTitle">Max Cook Time</span>
+          <select
+            value={cookTime}
+            onChange={(e) => setCookTime(e.target.value)}
+            className="select selTwo"
+          >
+            <option value="">Cancel</option>
+            <option value="5">5 min</option>
+            <option value="10">10 min</option>
+            <option value="15">15 min</option>
+            <option value="20">20 min</option>
+          </select>
+        </div>
       </div>
 
       {loading && <p>Yuklanmoqda...</p>}
