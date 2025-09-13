@@ -714,4 +714,61 @@ a {
   font-family: "Nunito Sans";
   font-size: 16px;
   color: #163a34;
+  margin-top: -10rem;
+  margin-bottom: 3rem;
+  margin-left: -4.8rem;
+}
+
+.authApp {
+  display: flex;
+  justify-content: end;
+  gap: 24px;
+  position: relative;
+  left: 6rem;
+  bottom: 3rem;
+}
+
+.footerTabImg {
+  display: none;
+}
+
+@media (max-width: 761px) {
+  .secImg {
+    position: relative;
+    top: 5rem;
+    margin-left: -37rem;
+  }
+  .footer {
+    position: relative;
+    top: 18rem;
+  }
+  .footerTitle {
+    width: 704px;
+    height: 58px;
+    font-size: 48px;
+    position: relative;
+    bottom: 5rem;
+  }
+  .footerDesc {
+    position: relative;
+    bottom: 5rem;
+    right: 15rem;
+  }
+  .footerImg {
+    display: none;
+  }
+  .footerTabImg {
+    width: 680px;
+    display: inline-block;
+    position: relative;
+    bottom: 13rem;
+    right: 0.5rem;
+  }
+  .authTitle {
+    margin-left: 1rem;
+  }
+  .authApp {
+    margin-right: 8rem;
+    margin-top: -2rem;
+  }
 }

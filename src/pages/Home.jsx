@@ -82,8 +82,13 @@ function Home() {
           />
         </div>
       </section>
-      <footer>
+      <footer className="footer">
         <img className="footerImg" src="/assets/footerImg.png" alt="" />
+        <img
+          className="footerTabImg"
+          src="/assets/footerTabaletImg.png"
+          alt=""
+        />
         <div className="footerItems">
           <h1 className="footerTitle">Ready to cook smarter?</h1>
           <p className="footerDesc">
@@ -93,6 +98,11 @@ function Home() {
         </div>
         <div className="authItem">
           <h3 className="authTitle">Made with ❤️ and 🥑</h3>
+          <div className="authApp">
+            <img src="/assets/icon-instagram.svg" alt="" />
+            <img src="/assets/icon-bluesky.svg" alt="" />
+            <img src="/assets/icon-tiktok.svg" alt="" />
+          </div>
         </div>
       </footer>
     </>
