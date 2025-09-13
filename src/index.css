@@ -1,3 +1,5 @@
+@plugin "daisyui";
+@import "tailwindcss";
 /* nunito-500 - latin */
 @font-face {
   font-display: swap;
@@ -1080,4 +1082,163 @@ a {
     position: relative;
     left: 3rem;
   }
+}
+
+.recTitle {
+  width: 800px;
+  height: 58px;
+  font-family: "Nunito";
+  font-weight: 800;
+  font-size: 48px;
+  color: #163a34;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recDesc {
+  width: 724px;
+  height: 90px;
+  font-family: "Nunito Sans";
+  font-weight: 500;
+  font-size: 20px;
+  color: #395852;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@media (max-width: 831px) {
+  .recTitle {
+    margin-left: 7rem;
+  }
+  .recDesc {
+    margin-left: 7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .recTitle {
+    width: 704px;
+    height: 116px;
+    margin-left: -0.7rem;
+  }
+  .recDesc {
+    text-align: start;
+    width: 704px;
+    height: 90px;
+    margin-left: -0.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .recTitle {
+    width: 343px;
+    height: 96px;
+    margin-left: -0.7rem;
+  }
+  .recDesc {
+    text-align: start;
+    width: 343px;
+    height: 180px;
+    margin-left: -0.7rem;
+    margin-top: 13rem;
+  }
+}
+
+.recTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.recDesc {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-title {
+  width: 344px;
+  height: 28px;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #163a34;
+}
+
+.card-desc {
+  width: 344px;
+  height: 48px;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  color: #395852;
+  margin-bottom: 12px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.card-btn {
+  width: 340px;
+  height: 48px;
+  background: #064e3b;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: "Nunito Sans";
+  font-weight: 700;
+}
+
+.card-btn:hover {
+  background: #052e1d;
+}
+
+.serving {
+  display: flex;
+}
+
+.prep {
+  display: flex;
+}
+
+.act {
+  display: flex;
+  gap: 10px;
+}
+
+.cook {
+  display: flex;
 }
