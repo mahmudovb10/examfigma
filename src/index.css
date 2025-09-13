@@ -772,3 +772,312 @@ a {
     margin-top: -2rem;
   }
 }
+
+.aboutTitle {
+  width: 130px;
+  height: 28px;
+  font-family: "Nunito";
+  font-size: 20px;
+  color: #163a34;
+}
+
+.abTitleCol {
+  width: 119px;
+  height: 32px;
+  border-radius: 6px;
+  background-color: #fe9f6b;
+  z-index: -1;
+  position: relative;
+  bottom: 3.2rem;
+  right: 0.25rem;
+}
+
+.abTitleMain {
+  width: 530px;
+  height: 174px;
+  font-family: "Nunito";
+  font-size: 48px;
+  color: #163a34;
+}
+
+.abDesc {
+  width: 510px;
+  height: 90px;
+  font-family: "Nunito Sans";
+  font-weight: 500;
+  font-size: 20px;
+  color: #395852;
+}
+
+.abDescTwo {
+  width: 510px;
+  height: 90px;
+  font-family: "Nunito Sans";
+  font-weight: 500;
+  font-size: 20px;
+  color: #395852;
+}
+
+.abImg {
+  width: 618px;
+  height: 600px;
+  border-radius: 20px;
+  margin-left: 36rem;
+  margin-top: -32rem;
+  margin-bottom: 10rem;
+}
+
+@media (max-width: 769px) {
+  .abTitleCol {
+    display: flex;
+    justify-content: start;
+    position: relative;
+  }
+  .abDesc {
+    width: 704px;
+    height: 116px;
+    font-family: "Nunito";
+  }
+  .abImg {
+    position: relative;
+    top: 40rem;
+    right: 36rem;
+    margin-bottom: 5rem;
+  }
+  .abExist {
+    position: relative;
+    top: 45rem;
+    right: 25rem;
+  }
+  .existTitle {
+    position: relative;
+    bottom: 5rem;
+    left: 25rem;
+  }
+  .bullTitle {
+    width: 652px;
+    height: 31px;
+    font-size: 24px;
+  }
+  .bullDesc {
+    width: 652px;
+    height: 90px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .abTitleCol {
+    display: flex;
+    justify-content: start;
+    position: relative;
+  }
+  .abDesc {
+    width: 704px;
+    height: 116px;
+    font-family: "Nunito";
+  }
+  .abImg {
+    position: relative;
+    top: 40rem;
+    right: 36rem;
+    margin-bottom: 5rem;
+  }
+  .abExist {
+    position: relative;
+    top: 45rem;
+    right: 25rem;
+  }
+  .existTitle {
+    position: relative;
+    bottom: 5rem;
+    left: 25rem;
+  }
+  .bullTitle {
+    width: 652px;
+    height: 31px;
+    font-size: 24px;
+  }
+  .bullDesc {
+    width: 652px;
+    height: 90px;
+    font-size: 20px;
+  }
+}
+
+.abContent {
+  position: relative;
+  top: 10rem;
+}
+
+.abHr {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.existTitle {
+  width: 372px;
+  height: 58px;
+  font-family: "Nunito";
+  font-weight: 800;
+  font-size: 48px;
+  color: #163a34;
+  margin-top: 96px;
+}
+
+.bulletIcon {
+  position: relative;
+  left: 25rem;
+  bottom: 5rem;
+}
+
+.bullTitle {
+  width: 704px;
+  height: 31px;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 24px;
+  color: #163a34;
+  position: relative;
+  left: 28rem;
+  bottom: 8.7rem;
+}
+
+.oneBull {
+  width: 704px;
+  height: 31px;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 24px;
+  color: #163a34;
+  position: relative;
+  left: 28rem;
+  bottom: 8.7rem;
+}
+
+.oneBullDesc {
+  width: 704px;
+  height: 90px;
+  font-family: "Nunito Sans";
+  font-weight: 500;
+  font-size: 20px;
+  color: #395852;
+  position: relative;
+  left: 28rem;
+  bottom: 8.7rem;
+}
+
+.bullDesc {
+  width: 704px;
+  height: 90px;
+  font-family: "Nunito Sans";
+  font-weight: 500;
+  font-size: 20px;
+  color: #395852;
+  position: relative;
+  left: 28rem;
+  bottom: 8.7rem;
+}
+
+.abCenHr {
+  margin-bottom: 5rem;
+}
+
+.philoTitle {
+  width: 372px;
+  height: 58px;
+  font-family: "Nunito";
+  font-weight: 800;
+  font-size: 48px;
+  color: #163a34;
+  margin-top: 96px;
+}
+
+.stHr {
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 769px) {
+  .philo {
+    position: relative;
+    top: 38rem;
+    right: 25rem;
+  }
+  .philoTitle {
+    width: 704px;
+    height: 58px;
+    font-size: 40px;
+    position: relative;
+    bottom: 8rem;
+    left: 25rem;
+  }
+}
+
+.beyondTitle {
+  width: 400px;
+  height: 58px;
+  font-family: "Nunito";
+  font-weight: 800;
+  font-size: 48px;
+  color: #163a34;
+}
+
+.beyondDesc {
+  width: 704px;
+  height: 60px;
+  font-family: "Nunito Sans";
+  font-weight: 500;
+  font-size: 20px;
+  color: #395852;
+}
+
+.abLi {
+  width: 376px;
+  font-family: "Nunito Sans";
+  font-weight: 500;
+  font-size: 20px;
+  color: #395852;
+}
+
+.abUl {
+  margin-bottom: 5rem;
+}
+
+.beyondImg {
+  width: 744px;
+  height: 400px;
+  border-radius: 12px;
+  position: relative;
+  left: 35rem;
+  bottom: 25rem;
+}
+
+@media (max-width: 850px) {
+  .beyondTitle {
+    position: relative;
+    top: 25rem;
+  }
+  .beyondDesc {
+    position: relative;
+    top: 25rem;
+  }
+  .abUl {
+    position: relative;
+    top: 25rem;
+    margin-bottom: 5rem;
+  }
+  .beyondImg {
+    position: relative;
+    top: 25rem;
+    left: 1rem;
+  }
+  .abFooter {
+    position: relative;
+    top: 45rem;
+    left: 2rem;
+  }
+  .abauth {
+    position: relative;
+    left: 3rem;
+  }
+}
