@@ -28,7 +28,7 @@ function Recipes() {
   if (debouncedSearch.trim() !== "")
     queryParams.append("slug", debouncedSearch.trim());
 
-  const url = `https://json-api.uz/api/project/recipes/recipes${
+  const url = `/api/project/recipes/recipes${
     queryParams.toString() ? "?" + queryParams.toString() : ""
   }`;
 
