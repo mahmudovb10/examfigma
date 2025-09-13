@@ -1242,3 +1242,36 @@ a {
 .cook {
   display: flex;
 }
+
+.selects {
+  position: relative;
+  top: 3rem;
+  right: 14rem;
+  margin-bottom: 5rem;
+}
+
+.selOne {
+}
+
+.selTwo {
+  margin-left: 2rem;
+  position: relative;
+  right: 8rem;
+}
+
+.prepTitle {
+  position: relative;
+  bottom: 2rem;
+  left: 8rem;
+}
+
+.cookTitle {
+  position: relative;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.search {
+  position: relative;
+  bottom: 15rem;
+}
