@@ -7,14 +7,16 @@ export const useFetch = (url) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    if (!url) return;
+
     const getData = async () => {
       setLoading(true);
       try {
-        const res = await axios.get(url);
-        console.log("API response:", res.data);
+        const res = await axios.get(url, {
+          headers: { "Content-Type": "application/json" },
+        });
         setData(res.data);
       } catch (err) {
-        console.error("Fetch error:", err.message);
         setError(err.message);
       } finally {
         setLoading(false);

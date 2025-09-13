@@ -31,7 +31,6 @@ function Recipes() {
   const url = `/api/project/recipes/recipes${
     queryParams.toString() ? "?" + queryParams.toString() : ""
   }`;
-
   const { data, loading, error } = useFetch(url);
   const recipes = data?.data || data || [];
 
@@ -43,23 +42,12 @@ function Recipes() {
       <p className="recDesc text-center text-gray-600 max-w-2xl mx-auto mb-8">
         Discover eight quick, whole-food dishes that fit real-life schedules and
         taste amazing. Use the search bar to find a recipe by name or
-        ingredient, or simply scroll the list and let something delicious catch
-        your eye.
+        ingredient.
       </p>
 
-      <div>
-        <div className="mb-6 flex justify-end ">
-          <input
-            type="text"
-            placeholder="Search recipes..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="border border-gray-300 rounded-lg px-4 py-2 w-[310px] max-w-md focus:outline-none focus:ring-2 focus:ring-gray-300"
-          />
-        </div>
-
-        <div className="selects flex gap-4 justify-center mb-6">
-          <span className="prepTitle">Max Prep Time</span>
+      <div className="flex justify-between mb-6">
+        <div>
+          <span className="prepTitle mr-2">Max Prep Time</span>
           <select
             value={prepTime}
             onChange={(e) => setPrepTime(e.target.value)}
@@ -69,8 +57,10 @@ function Recipes() {
             <option value="5">5 min</option>
             <option value="10">10 min</option>
           </select>
+        </div>
 
-          <span className="cookTitle">Max Cook Time</span>
+        <div>
+          <span className="cookTitle mr-2">Max Cook Time</span>
           <select
             value={cookTime}
             onChange={(e) => setCookTime(e.target.value)}
@@ -82,6 +72,16 @@ function Recipes() {
             <option value="15">15 min</option>
             <option value="20">20 min</option>
           </select>
+        </div>
+
+        <div>
+          <input
+            type="text"
+            placeholder="Search recipes..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="border border-gray-300 rounded-lg px-4 py-2 w-[310px] max-w-md focus:outline-none focus:ring-2 focus:ring-gray-300"
+          />
         </div>
       </div>
 
