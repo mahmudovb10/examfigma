@@ -1,5 +1,6 @@
 import { useFetch } from "../hooks/useFetch";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Recipes() {
   const { data, loading, error } = useFetch(
@@ -12,22 +13,30 @@ function Recipes() {
   const recipes = data?.data || data || [];
 
   return (
-    <div>
-      <h1 className="recTitle">Explore our simple, healthy recipes</h1>
-      <p className="recDesc">
+    <div className="p-4 max-w-7xl mx-auto">
+      <h1 className="recTitle text-2xl font-bold text-center mb-2">
+        Explore our simple, healthy recipes
+      </h1>
+      <p className="recDesc text-center text-gray-600 max-w-2xl mx-auto mb-8">
         Discover eight quick, whole-food dishes that fit real-life schedules and
         taste amazing. Use the search bar to find a recipe by name or
         ingredient, or simply scroll the list and let something delicious catch
         your eye.
       </p>
 
-      <div className="card-grid">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {recipes.map((recipe) => (
           <div className="card" key={recipe.id}>
             <picture>
-              <source media="(max-width: 768px)" srcSet={recipe.image.small} />
+              <source
+                media="(max-width: 768px)"
+                srcSet={recipe.image.small.replace(
+                  "./assets/images",
+                  "/assets"
+                )}
+              />
               <img
-                src={recipes.image}
+                src={recipe.image.large.replace("./assets/images", "/assets")}
                 alt={recipe.title}
                 className="card-img"
               />
@@ -53,7 +62,9 @@ function Recipes() {
                 </div>
               </div>
 
-              <button className="card-btn">View Recipe</button>
+              <button className="card-btn">
+                <Link to={`/recipes/${recipe.id}`}>View Recipe</Link>
+              </button>
             </div>
           </div>
         ))}
