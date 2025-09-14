@@ -1349,7 +1349,7 @@ a {
   gap: 2rem;
   position: relative;
   left: 42.5rem;
-  bottom: 38rem;
+  bottom: 40rem;
 }
 
 .rexIngr {
@@ -1361,13 +1361,18 @@ a {
   color: #163a34;
   position: relative;
   left: 42.8rem;
-  bottom: 35rem;
+  bottom: 37rem;
 }
 
 .recIc {
   position: relative;
   left: 42.6rem;
   bottom: 32rem;
+}
+
+.recIn {
+  position: relative;
+  bottom: 2rem;
 }
 
 .recInT {
@@ -1397,6 +1402,8 @@ a {
 
 .recIns {
   margin-top: 5rem;
+  position: relative;
+  bottom: 5rem;
 }
 
 .authAcc {
