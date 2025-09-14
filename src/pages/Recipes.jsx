@@ -38,7 +38,7 @@ function Recipes() {
       <h1 className="recTitle text-2xl font-bold text-center mb-2">
         Explore our simple, healthy recipes
       </h1>
-      <p className="recDesc">
+      <p className="recDescr">
         Discover eight quick, whole-food dishes that fit real-life schedules and
         taste amazing. Use the search bar to find a recipe by name or
         ingredient, or simply scroll the list and let something delicious catch
