@@ -1336,9 +1336,12 @@ a {
   font-size: 20px;
   color: #395852;
   margin: 20px auto;
-  text-align: center;
-  width: 704px;
+  text-align: start;
+  width: 500px;
   height: 90px;
+  position: relative;
+  left: 21rem;
+  bottom: 40rem;
 }
 
 .times {
