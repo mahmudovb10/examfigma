@@ -45,13 +45,13 @@ function Recipes() {
         your eye.
       </p>
 
-      <div className="mb-6 flex justify-end">
+      <div className="mb-6 flex justify-end ">
         <input
           type="text"
           placeholder="Search recipes..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="border border-gray-300 rounded-lg px-4 py-2 w-[310px] max-w-md focus:outline-none focus:ring-2 focus:ring-gray-300"
+          className="relative top-27.5 border border-gray-300 rounded-lg px-4 py-2 w-[310px] max-w-md focus:outline-none focus:ring-2 focus:ring-gray-300"
         />
       </div>
 
