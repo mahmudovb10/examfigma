@@ -1333,16 +1333,12 @@ a {
 }
 
 .recDesc {
-  width: 572px;
-  height: 60px;
-  font-family: "Nunito Sans";
-  font-weight: 500;
   font-size: 20px;
   color: #395852;
-  text-align: start;
-  position: relative;
-  left: 24rem;
-  bottom: 39rem;
+  margin: 20px auto;
+  text-align: center;
+  width: 704px;
+  height: 90px;
 }
 
 .times {
