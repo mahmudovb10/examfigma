@@ -697,6 +697,7 @@ a {
   object-fit: cover;
   margin-top: -15rem;
   margin-bottom: 5rem;
+  margin-left: 4rem;
   /* z-index: -1; */
 }
 
@@ -736,7 +737,7 @@ a {
   color: #163a34;
   margin-top: -10rem;
   margin-bottom: 3rem;
-  margin-left: -4.8rem;
+  margin-left: -1.8rem;
 }
 
 .minimumPost {
@@ -754,7 +755,7 @@ a {
   justify-content: end;
   gap: 24px;
   position: relative;
-  left: 60rem;
+  left: 65rem;
   bottom: 10rem;
 }
 
@@ -950,7 +951,9 @@ a {
 
 .abHr {
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 10rem;
+  position: relative;
+  top: 2rem;
 }
 
 .existTitle {

@@ -100,9 +100,15 @@ function Home() {
         <div className="authItem">
           <h3 className="authTitle">Made with ❤️ and 🥑</h3>
           <div className="authApp">
-            <img src="/assets/icon-instagram.svg" alt="" />
-            <img src="/assets/icon-bluesky.svg" alt="" />
-            <img src="/assets/icon-tiktok.svg" alt="" />
+            <a href="">
+              <img src="/assets/icon-instagram.svg" alt="" />
+            </a>
+            <a href="">
+              <img src="/assets/icon-bluesky.svg" alt="" />
+            </a>
+            <a href="">
+              <img src="/assets/icon-tiktok.svg" alt="" />
+            </a>
           </div>
         </div>
       </footer>
